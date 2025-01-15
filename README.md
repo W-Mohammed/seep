@@ -190,7 +190,7 @@ The SEE Platform supports a diverse range of question types, ensuring a flexible
 
 ### 6. **Probability Questions**
 
-- Supports the **fixed-variable** method (also known as the fixed-value method) for structured expert elicitation.
+- A **fixed-intervall** method for structured expert elicitation.
 - Experts estimate the percentiles of a distribution function by comparing fixed values of the variable.
 - Includes features for allocating probabilities to potential values and generating a density function to validate responses.
 
