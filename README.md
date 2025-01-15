@@ -222,7 +222,7 @@ Each question type is designed to collect structured or unstructured data, tailo
 
 ## Acknowledgements
 
-This project is built on a lot of amazing open source projects, including the [SHELF](https://cran.r-project.org/web/packages/SHELF/index.html) R package for expert elicitation methods by Jeremy Oakley.
+This project is built on a lot of amazing open source projects, including the [SHELF](https://cran.r-project.org/web/packages/SHELF/index.html) R package for expert elicitation methods by Jeremy Oakley. Special thanks to [BhanukaRC](https://github.com/BhanukaRC) for his invaluable contributions.
 
 
 &copy; 2025 PRIORB. All rights reserved.
