@@ -1,0 +1,89 @@
+version: '3.9'
+
+networks:
+  app-network:
+    driver: bridge
+
+services:
+  client:
+    build: 
+      context: ./packages/client
+      args:
+        CLIENT_HOST: ${CLIENT_HOST}
+        NODE_HOST: ${NODE_HOST}
+        NGINX_CONF: ${NGINX_CONF}
+        GOOGLE_TAG_ID: ${GOOGLE_TAG_ID}
+    image: client
+    restart: always
+    volumes:
+      - ./packages/client:/app 
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - app-network
+    depends_on:
+      - node-server
+
+
+  node-server:
+    container_name: node-server
+    build: ./packages/node-server
+    image: node-server
+    restart: always
+    depends_on:
+      - mongo
+      - r-server
+    ports:
+      - "${PORT:-3000}:3000"
+    volumes:
+      - ./packages/node-server:/usr/src/app
+      - logs-volume:/logs/server
+    environment:
+      - NODE_ENV
+      - R_SERVER_HOST
+      - CLIENT_HOST
+      - DB_URL
+      - JWT_SECRET
+      - ADMIN_USERNAME
+      - ADMIN_PASSWORD
+      - ORGANISATION_NAME
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+      - AWS_REGION
+    networks:
+      - app-network
+
+  r-server:
+    container_name: r-server
+    build: ./packages/r-server
+    restart: always
+    ports:
+      - "3003:8000"
+    networks:
+      - app-network
+
+  mongo:
+    image: mongo:6.0
+    container_name: mongo
+    restart: always
+    logging:
+      driver: "none"
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    command: [ "--replSet", "rs0",  "--bind_ip_all", "--port", "27017", "--logpath", "/dev/null"]
+    networks:
+      - app-network
+    healthcheck:
+      test: |
+        mongosh --eval "try { rs.status().ok } catch (e) { rs.initiate({ _id: 'rs0', members: [{ _id: 0, host: 'mongo:27017' }] }).ok }"
+      start_period: 0s
+      interval: 500ms
+      timeout: 5s
+      retries: 5
+
+volumes:
+  logs-volume:
+  mongo-data:

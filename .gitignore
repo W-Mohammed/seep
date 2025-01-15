@@ -1,0 +1,42 @@
+# Dependency directories
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build directories
+dist/
+client/dist/
+server/dist/
+build/
+
+# Environment files
+config/.env
+*/.env
+*.env
+*.env.local
+*.env.dev
+*.env.prod
+
+# Log files
+logs/*
+*.log
+
+# Operating System files
+.DS_Store
+*/.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE and Editor files
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+
+# project specific
+projects/
+
+# SSL certificates
+packages/client/letsencrypt/
