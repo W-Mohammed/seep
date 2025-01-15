@@ -38,7 +38,6 @@ The docker based setup uses the following techstack:
 - **MongoDB**
 - **Nginx**
 - **Vue.js**
-- **Docker Compose** 
 
 The production environment assumes that you have a domain name and SSL certificates.
 
