@@ -2,6 +2,8 @@
 
 by PRIORB, 2025
 
+> This repository contains the code for the Structured Expert Elicitation Platform (SEEP), a project that is no longer under active development.
+
 ## Overview
 
 The Structured Expert Elicitation Platform (SEEP) is a web application designed to facilitate the collection and aggregation of expert judgments. Admins can create surveys and workshops with various question types for experts. Experts participate by submitting their judgments. Both individual and aggregated results can be reviewed and exported.
