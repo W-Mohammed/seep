@@ -3,8 +3,8 @@
     <div class="container flex flex-col items-center justify-start w-full h-full">
       <div class="me-auto my-auto flex gap-2 text-gray-500 text-xxs">
         <span>
-          <span>© 2024</span>
-          <span class="ps-1">PRIORB</span>
+          <span>© 2025</span>
+          <span class="ps-1">Dark Peak Analytics Ltd</span>
         </span>
         <span>•</span>
         <a href="/privacy"
@@ -13,7 +13,7 @@
         <!-- <span>Terms of Service</span>
         <span>•</span> -->
         <span>
-        <a href="mailto:contact@priorb.com" class="hover:text-priorb-primary">contact@priorb.com</a> 
+        <a href="mailto:contact@darkpeakanalytics.com" class="hover:text-priorb-primary">contact@darkpeakanalytics.com</a> 
         
         </span>
       </div>

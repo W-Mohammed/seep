@@ -1,7 +1,7 @@
 const prettyHealthCheck = (response) => {
   const html = `<html>
     <head>
-    <title>PRIORB SEE Platform health check</title>
+    <title>Dark Peak Analytics SEE Platform health check</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         * { font-family: monospace; background-color: #202020; color: white; font-size: 14px; }
@@ -16,7 +16,7 @@ const prettyHealthCheck = (response) => {
       </style></head>
       <body>
       <div class="container">
-      <h1>PRIORB SEE Platform health check</h1>
+      <h1>Dark Peak Analytics SEE Platform health check</h1>
       
       <div class="flexi">
       <div class="circle ${response.node === 'OK' ? 'green' : 'red'}"></div>

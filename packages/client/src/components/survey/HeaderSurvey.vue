@@ -4,11 +4,11 @@
       class="bg-white h-10 border-b border-gray-300 px-lg-8 px-2 max-w-full w-full overflow-hidden"
     >
       <div class="flex items-center h-full justify-between gap-2 ms-2 md:ms-4 lg:ms-8">
-      <!-- image with tooltip saying PRIORB -->
+      <!-- image with tooltip saying Dark Peak Analytics -->
         <img
           src="/favicon.ico"
-          title="PRIORB"
-          alt="PRIORB logo"
+          title="Dark Peak Analytics"
+          alt="Dark Peak Analytics logo"
           class="h-8 cursor-pointer"
           @click="goToHomepage"
         />

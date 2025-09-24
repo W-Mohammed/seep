@@ -384,7 +384,7 @@ const expertsApi = function (app) {
       try {
         const sendEmailCommand = createSendEmailCommand(
           req.body.email,
-          'support@priorb.com',
+          'support@darkpeakanalytics.com',
           req.body.emailBody,
           req.body.subject
         );

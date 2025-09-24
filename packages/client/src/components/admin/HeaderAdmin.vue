@@ -9,12 +9,12 @@
       <div class="flex items-center" @click="goToAdminHomepage()" role="button">
         <img
           src="/priorb-logo.png"
-          alt="PRIORB logo"
+          alt="Dark Peak Analytics logo"
           class="h-4 cursor-pointer hidden md:block cursor-pointer"
         />
         <img
           src="/favicon.ico"
-          alt="PRIORB logo small"
+          alt="Dark Peak Analytics logo small"
           class="h-8 pb-1 cursor-pointer block md:hidden cursor-pointer"
         />
       </div>

@@ -72,7 +72,7 @@
             
             <a class="ms-auto text-priorb-500 underline hover:text-priorb-700 text-sm"
 
-               href="mailto:contact@priorb.com?subject=Request Access"
+               href="mailto:contact@darkpeakanalytics.com?subject=Request Access"
             >
               Request an account
             </a>

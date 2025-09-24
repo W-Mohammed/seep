@@ -1,6 +1,6 @@
 # Structured Expert Elicitation Platform (SEEP)
 
-by PRIORB, 2025
+by Dark Peak Analytics Ltd, 2025
 
 > This repository contains the code for the Structured Expert Elicitation Platform (SEEP), a project that is no longer under active development.
 
@@ -10,7 +10,7 @@ The Structured Expert Elicitation Platform (SEEP) is a web application designed 
 
 This repository contains the source code and configurations needed to run the platform.
 
-Contact: [contact@priorb.com](mailto:contact@priorb.com)
+Contact: [contact@darkpeakanalytics.com](mailto:contact@darkpeakanalytics.com)
 
 ---
 
@@ -68,9 +68,9 @@ DB_URL=mongodb://mongo:27017/see?replicaSet=rs0
 NGINX_CONF=local.conf
 JWT_SECRET={{A_VERY_LONG_SECRET}}
 # Initial admin user credentials
-ADMIN_USERNAME={{YOUR_ADMIN_USERNAME}} # e.g. admin@priorb.com
+ADMIN_USERNAME={{YOUR_ADMIN_USERNAME}} # e.g. admin@darkpeakanalytics.com
 ADMIN_PASSWORD={{YOUR_ADMIN_PASSWORD}} # e.g. SEEP123!
-ORGANISATION_NAME={{YOUR_ORGANISATION_NAME}} # e.g. PRIORB
+ORGANISATION_NAME={{YOUR_ORGANISATION_NAME}} # e.g. DPA
 # OPTIONAL (for AWS SES)
 AWS_ACCESS_KEY_ID={{AWS_ACCESS_KEY_ID}}
 AWS_SECRET_ACCESS_KEY={{AWS_SECRET_ACCESS_KEY}}
@@ -99,8 +99,8 @@ git clone https://github.com/priorb-source/see-platform.git
 ```bash
 NODE_ENV=production
 R_SERVER_HOST=r-server:8000
-CLIENT_HOST={{YOUR_DOMAIN}} # e.g. https://priorb.com
-NODE_HOST={{YOUR_BACKEND_DOMAIN}} # e.g. https://api.priorb.com
+CLIENT_HOST={{YOUR_DOMAIN}} # e.g. https://darkpeakanalytics.com
+NODE_HOST={{YOUR_BACKEND_DOMAIN}} # e.g. https://api.darkpeakanalytics.com
 # MongoDB URL can be remote cluster URL or local path 
 DB_URL={{LOCAL_MONGODB_PATH_OR_REMOTE_URL}} # (local: mongodb://mongo:27017/see?replicaSet=rs0)
 JWT_SECRET={{A_VERY_LONG_SECRET}}
@@ -108,9 +108,9 @@ NGINX_CONF=prod.conf
 CLIENT_SSL_DIR={{PATH_TO_CLIENT_SSL_CERTIFICATES}}
 SERVER_SSL_DIR={{PATH_TO_SERVER_SSL_CERTIFICATES}}
 # Initial admin user credentials
-ADMIN_USERNAME={{YOUR_ADMIN_USERNAME}} # e.g. admin@priorb.com
+ADMIN_USERNAME={{YOUR_ADMIN_USERNAME}} # e.g. admin@darkpeakanalytics.com
 ADMIN_PASSWORD={{YOUR_ADMIN_PASSWORD}} # e.g. SEEP123!
-ORGANISATION_NAME={{YOUR_ORGANISATION_NAME}} # e.g. PRIORB
+ORGANISATION_NAME={{YOUR_ORGANISATION_NAME}} # e.g. DPA
 # OPTIONAL (for AWS SES)
 AWS_ACCESS_KEY_ID={{AWS_ACCESS_KEY_ID}}
 AWS_SECRET_ACCESS_KEY={{AWS_SECRET_ACCESS_KEY}}
@@ -226,6 +226,6 @@ Each question type is designed to collect structured or unstructured data, tailo
 This project is built on a lot of amazing open source projects, including the [SHELF](https://cran.r-project.org/web/packages/SHELF/index.html) R package for expert elicitation methods by Jeremy Oakley. Special thanks to [BhanukaRC](https://github.com/BhanukaRC) for his invaluable contributions.
 
 
-&copy; 2025 PRIORB. All rights reserved.
+&copy; 2025 Dark Peak Analytics. All rights reserved.
 
 

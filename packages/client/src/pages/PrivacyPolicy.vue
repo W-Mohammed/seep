@@ -9,14 +9,14 @@
 @click="goBackWhereYouCameFrom"
 >&lt; Go Back</div>
 </div>
-    <h1>PRIORB Privacy Policy</h1>
+    <h1>Dark Peak Analytics Privacy Policy</h1>
 
-    <p>At PRIORB UG, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information.</p>
+    <p>At Dark Peak Analytics LTD, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information.</p>
 
 
     <h2>About Our Users</h2>
 
-<p>PRIORB serves two primary user groups:</p>
+<p>Dark Peak Analytics serves two primary user groups:</p>
 <p>
 <ul>
     <li>Admin Users: These are our clients who use our platform to create and host expert surveys, collect data from expert users, and analyze the results.</li>
@@ -126,10 +126,10 @@
 
     <p>If you have any questions or concerns about this Privacy Policy, please contact us at:</p>
 
-    <p>PRIORB UG<br>
-    Gewerkenstr 8<br>
-    44805 Bochum, Germany<br>
-    <a href="mailto:contact@priorb.com">contact@priorb.com</a>
+    <p>Dark Peak Analytics Ltd<br>
+    8 Old Hay Gardens<br>
+    S17 3HG, Sheffield, United Kingdom<br>
+    <a href="mailto:contact@darkpeakanalytics.com">contact@darkpeakanalytics.com</a>
     </p>
 
     </div>

@@ -44,5 +44,5 @@ function(values, probabilities, xMin = -Inf, xMax = Inf, nx = 20) {
 # root route
 #* @get /
 function() {
-    "PRIORB R Plumber API serving SHELF scripts"
+    "DPA R Plumber API serving SHELF scripts"
 }

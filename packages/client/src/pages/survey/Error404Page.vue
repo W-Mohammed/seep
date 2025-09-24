@@ -24,7 +24,7 @@ import {storeToRefs} from 'pinia'
 const expertStore = useExpertStore()
 const {errorMsg} = storeToRefs(expertStore)
 import { ref } from 'vue'
-const contactEmail = ref('support@priorb.com')
+const contactEmail = ref('contact@darkpeakanalytics.com')
 </script>
 
 <style scoped>

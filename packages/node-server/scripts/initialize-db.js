@@ -9,9 +9,9 @@ dotenv.config({ path: '.env.dev' });
 const initializeDb = async () => {
   try {
     // Get admin credentials from env or use defaults
-    const adminUsername = process.env.ADMIN_USERNAME || 'admin@priorb.com';
+    const adminUsername = process.env.ADMIN_USERNAME || 'wmohammed@darkpeakanalytics.com';
     const adminPassword = process.env.ADMIN_PASSWORD || 'SEEP123!';
-    const organisationName = process.env.ORGANISATION_NAME || 'PRIORB';
+    const organisationName = process.env.ORGANISATION_NAME || 'DPA';
 
     // Check if admin user exists
     const existingTenant = await Tenant.findOne({
@@ -42,7 +42,7 @@ const initializeDb = async () => {
       });
 
       // Create demo survey
-      await setupDemoSurvey('priorb');
+      await setupDemoSurvey('dpa');
       
       console.log('Admin user and demo survey created successfully');
     } else {

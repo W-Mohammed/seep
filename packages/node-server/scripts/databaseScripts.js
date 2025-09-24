@@ -32,8 +32,8 @@ const setupDemoSurvey = async (tenantId) => {
     _id: suuveyIdMongoose,
     studyContact: {
       name: 'Survey Creator',
-      email: 'admin@priorb.de',
-      organisation: 'PRIORB',
+      email: 'wmohammed@darkpeakanalytics.com',
+      organisation: 'DPA',
     },
     config: {
       allowPostSubmissionView: true,
@@ -463,9 +463,9 @@ const setupDemoSurvey = async (tenantId) => {
         body: "If we have any follow-up questions we will be in contact.",
         subtitle: null,
         contactNote: "If you have any questions, please contact:",
-        contactEmail: "paul@priorb.com",
-        contactOrganisation: "Priorb",
-        contactPerson: "Paul Schneider"
+        contactEmail: "rsmith@darkpeakanalytics.com",
+        contactOrganisation: "Dark Peak Analytics",
+        contactPerson: "Robert Smith"
       },
       isChild: false,
       children: [],
