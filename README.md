@@ -61,7 +61,7 @@ git clone https://github.com/priorb-source/see-platform.git
 
 ```bash
 NODE_ENV=development
-R_SERVER_HOST=r-server:8000
+R_SERVER_HOST=http://r-server:8000
 CLIENT_HOST=http://localhost:5173
 NODE_HOST=http://localhost:3000
 DB_URL=mongodb://mongo:27017/see?replicaSet=rs0
@@ -98,7 +98,7 @@ git clone https://github.com/priorb-source/see-platform.git
 
 ```bash
 NODE_ENV=production
-R_SERVER_HOST=r-server:8000
+R_SERVER_HOST=http://r-server:8000
 CLIENT_HOST={{YOUR_DOMAIN}} # e.g. https://darkpeakanalytics.com
 NODE_HOST={{YOUR_BACKEND_DOMAIN}} # e.g. https://api.darkpeakanalytics.com
 # MongoDB URL can be remote cluster URL or local path 
